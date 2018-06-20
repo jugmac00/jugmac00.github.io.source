@@ -1,2 +1,5 @@
 [project]
 name = mysite
+
+[servers.ghpages]
+target = ghpages://jugmac00/jugmac00.github.io
