@@ -40,3 +40,9 @@ header nav ul li {
 div.page {
     background: #f1fbfe;
 }
+
+pre {
+	  background: #454545;
+		color: white;
+		padding: 15px;
+		font-family: monospace;
