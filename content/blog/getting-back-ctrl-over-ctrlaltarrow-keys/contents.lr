@@ -32,7 +32,7 @@ $ sudo dnf install dconf-editor
 - change the keybindings
 
 ##the explanation
-I call not showing the shortcuts on the settings page a bug, or at very least a usability problem. Speaking of usability problems, on the settings page you can only see one shortcut per action, even when there are defined two or more.
+I think those missing shortcuts on the settings page is a [bug](https://bugzilla.redhat.com/show_bug.cgi?id=1597280) (which I reported), or at very least a usability problem. Speaking of usability problems, on the settings page you can only see one shortcut per action, even when there are defined two or more.
 
 Luckily, as shown above, there are ways to counter those problems.
 
