@@ -1,5 +1,5 @@
 [project]
-name = mysite
+name = Jürgen Gmach
 
 [servers.ghpages]
 target = ghpages://jugmac00/jugmac00.github.io
