@@ -41,6 +41,10 @@ div.page {
     background: #f1fbfe;
 }
 
+h2, h3 {
+	  border-bottom: 1px solid #454545;
+}
+
 pre {
 	  background: #454545;
 		color: white;
