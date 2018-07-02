@@ -36,7 +36,7 @@ I call not showing the shortcuts on the settings page a bug, or at very least a 
 
 Luckily, as shown above, there are ways to counter those problems.
 
-In order to save configurations both for the desktop itself and for its applications, Gnome uses a configuration system called **gconf**. I think of it as simple key-value database.
+In order to save preferences both for the system and for applications, Gnome uses a configuration system called **gconf**. I think of it as simple key-value database.
 
 There are several ways to access this database, amongst there are:
 - **gsettings**
