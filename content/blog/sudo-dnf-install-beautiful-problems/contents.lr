@@ -150,5 +150,8 @@ Adding system-wide site-packages could have some unforseen side effects, but at 
 Googling for the error message did not reveal much more information about this problem. But at least I found a [bug report](https://github.com/powerline/powerline/issues/1908) at **Powerline's** issue tracker - yet without an answer.
 
 Lately, **Powerline's** development seems to be not that active anyway, and to be honest, I am not sure, whether this is a **Powerline** or maybe even a **Vim** bug.
+
 ---
 twitter_handle: jugmac00
+---
+pub_date: 2018-07-04
