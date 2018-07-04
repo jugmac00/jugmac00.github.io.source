@@ -4,11 +4,11 @@ author: Jürgen Gmach
 ---
 body:
 
-There is something I immediately disliked when using Fedora the first time - the bash prompt.
+There is something I immediately disliked when using Fedora the first time - the Bash prompt.
 
 For many years I've been using a certain prompt at work for all my machines, a beauty in green and yellow... 
 
-And when I first started bash after installing Fedora on my home laptop, I encountered this grey monotony...
+And when I first started Bash after installing Fedora on my home laptop, I encountered this grey monotony...
 ```
 [jugmac00@localhost ~]$
 ```
@@ -23,7 +23,7 @@ Instead, while googling for resources about Fedora, I stumbled upon [Add power t
 From **Powerline's** [GitHub page](https://github.com/powerline/powerline):
 >Powerline is a statusline plugin for vim, and provides statuslines and prompts for several other applications, including zsh, bash, fish, tmux, IPython, Awesome, i3 and Qtile.
 
-The article is very well written, and easy to follow. A few minutes later, installing a few packages here, adding some lines to *.bashrc* and *.vim.rc* there, both **bash** and **Vim** looked great!
+The article is very well written, and easy to follow. A few minutes later, installing a few packages here, adding some lines to *.bashrc* and *.vim.rc* there, both **Bash** and **Vim** looked great!
 
 ### bash
 ![Alt-Text](powerline-bash.png)
