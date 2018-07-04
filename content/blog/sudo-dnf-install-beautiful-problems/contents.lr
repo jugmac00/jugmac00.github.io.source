@@ -16,7 +16,7 @@ And when I first started bash after installing Fedora on my home laptop, I encou
 I did not try to recreate the prompt I got at work, but I wanted to try something new - and *oh my zsh*, ah, *oh my god*,  **zsh** did not come to my mind - yuck!
 
 
-##the good (looking prompt and statusline)
+## the good (looking prompt and statusline)
 
 Instead, while googling for resources about Fedora, I stumbled upon [Add power to your terminal with powerline](https://fedoramagazine.org/add-power-terminal-powerline/) published on <https://fedoramagazine.org/>.
 
@@ -25,14 +25,14 @@ From **Powerline's** [GitHub page](https://github.com/powerline/powerline):
 
 The article is very well written, and easy to follow. A few minutes later, installing a few packages here, adding some lines to *.bashrc* and *.vim.rc* there, both **bash** and **Vim** looked great!
 
-###bash
+### bash
 ![Alt-Text](powerline-bash.png)
 
-###vim
+### vim
 ![Alt-Text](powerline-vim.png)
 
-##the bad (experience)
-The wow-effect lasted a couple of minutes, until I tried to work on a Python project.
+## the bad (experience)
+The wow-effect lasted only a couple of minutes, until I tried to work on a Python project.
 
 When you work on a Python project, it's an hell of an idea to use **virtualenv** instead of installing dependencies system wide.
 
@@ -115,7 +115,7 @@ There are *only* two Python 3 interpreters on my system (that I know of)
 
 So obviously, **Vim** is using my project's environment - instead of the system one!
 
-##the ugly (hack)
+## the ugly (hack)
 
 Two possible solutions came to my mind:
 - installing powerline into my virtualenv (*oh my zsh*, ah, *oh my god* - how could I even think of it? :-))
@@ -143,10 +143,10 @@ python3 import sys;sys.path.append("/usr/lib/python3.6/site-packages/")
 
 And here we go, **Powerline** and **Vim**, united once again - and this time, even when using an activated **virtualenv**.
 
-###drawback
+### drawback
 Adding system-wide site-packages could have some unforseen side effects, but at least it only effects **Vim**, and not my project. And, well... yolo :-)
 
-###bug report
+### bug report
 Googling for the error message did not reveal much more information about this problem. But at least I found a [bug report](https://github.com/powerline/powerline/issues/1908) at **Powerline's** issue tracker - yet without an answer.
 
 Lately, **Powerline's** development seems to be not that active anyway, and to be honest, I am not sure, whether this is a **Powerline** or maybe even a **Vim** bug.
