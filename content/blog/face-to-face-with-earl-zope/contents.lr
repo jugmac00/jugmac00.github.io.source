@@ -9,15 +9,16 @@ body:
 This blog post tries to ease beginning and keeping up with development of the open source web application server [Zope](https://zope.readthedocs.io/en/latest/) and its universe.
 
 ## what makes it hard to start contributing to Zope
-- **Zope** is a very mature product, as it started already back in 1999
-- **Zope** underwent some major architectural changes
+- **Zope** is a very mature product, as it was launched already back in [1999](https://en.wikipedia.org/wiki/Zope)
+- **Zope** underwent some major architectural changes (keyword [ZCA](http://muthukadan.net/docs/zca.html#introduction))
 - **Zope** itself is relatively complex
 - there is also a complex ecosystem around it
-  - buildout
-  - TravisCI
-  - GitHub.com
-  - tox
-  - zope.testrunner
+  - [Buildout](http://www.buildout.org/en/latest/)
+  - [TravisCI](https://travis-ci.org/)
+  - [GitHub.com](https://github.com/zopefoundation)
+  - [tox](https://tox.readthedocs.io/en/latest/)
+  - [zope.testrunner](https://zopetestrunner.readthedocs.io/en/latest/)
+  - [Read the Docs](https://readthedocs.org/)
   - ...
 - documentation is partially out of date (but there is an effort to fix this)
 - there are many developers which contribute for years, or even more than a decade, not many new developers
@@ -87,6 +88,11 @@ If you happen to see a **sudo: false/true** option in a **.travis.yml** file, yo
 
 - flaky tests - sometimes tests fail for **no reason** - you can try to dig deeper or just re-run the build by clicking the "rebuild" button on the TravisCI website.
 - bad cache => clear cache - rarely this is necessary; a re-run should do the job most of the time - please find more information at the [TravisCI documentation site](https://docs.travis-ci.com/user/caching/#clearing-caches).
+
+## updates
+
+**2019.05.03**
+-  update **what makes it hard to start contributing to Zope**; also add links
 
 
 ---
