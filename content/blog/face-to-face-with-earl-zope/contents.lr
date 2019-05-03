@@ -1,0 +1,95 @@
+title: Face to face with "Earl Zope" and his henchmen
+---
+author: Jürgen Gmach
+---
+body:
+
+> **_NOTE:_**  This blog post is **WORK IN PROGRESS** and will be updated regularly. Though, this post is first and foremost written for myself, please do not hesitate to drop me a line at juergen dot gmach at googlemail com or directly contribute to this article via [GitHub.com](https://github.com/jugmac00/jugmac00.github.io.source).
+
+This blog post tries to ease beginning and keeping up with development of the open source web application server [Zope](https://zope.readthedocs.io/en/latest/) and its universe.
+
+## what makes it hard to start contributing to Zope
+- **Zope** is a very mature product, as it started already back in 1999
+- **Zope** underwent some major architectural changes
+- **Zope** itself is relatively complex
+- there is also a complex ecosystem around it
+  - buildout
+  - TravisCI
+  - GitHub.com
+  - tox
+  - zope.testrunner
+  - ...
+- documentation is partially out of date (but there is an effort to fix this)
+- there are many developers which contribute for years, or even more than a decade, not many new developers
+- there are many **unwritten** rules
+
+## prerequisites
+
+**Zope** and probably the most of its related packages are licensed under the [ZPL](https://directory.fsf.org/wiki/License:ZPL-2.1). In order to contribute to the project, you need to sign a [contributor's agreement](http://docs.zope.org/developer/becoming-a-committer.html). If you do not get a reply to your application in a reasonable amount of time, please resend your email.
+
+## development process
+
+Once your application has been accepted, which is a mere formality, you may to start contributing.
+
+### where to find the source code
+
+Zope and all its related packages, which reside under the umbrella of the Zope Foundation, are hosted at [GitHub](https://github.com/zopefoundation).
+
+For instance, the repository for Zope is located at https://github.com/zopefoundation/Zope
+
+> **_NOTE:_**  There are plans to merge the Zope Foundation into the [Plone Foundation](https://plone.org/foundation) - current status is unknown.
+
+### flow
+
+Though not 100% consistent, usually you cannot and you should not directly work on the master branch.
+
+The recommended way is to clone the repository and work on a new branch.
+
+Once finished, push your branch to the repository and create a pull request. Both your branch and the pull request will get automatically tested by TravisCI (see below).
+
+Most repositories need both green tests and a successful review before a pull request gets merged.
+
+Usually you will merge the branch yourself - in order to show off that you have signed the contributor agreement.
+
+After the pull request had been merged, please delete your branch.
+
+> **_NOTE:_** If you want to implement very small changes - e.g. fixing typos - you can directly edit the file in your browser by clicking the pencil icon when viewing the file on GitHub.com. 
+
+### tests
+
+It is highly recommended that all code changes, bug fixes and new features should be tested by automatic tests.
+
+Unlike most other Python projects, **Zope/universe** does not make use of pytest - which can be both quite surprising and a bit of a hurdle.
+
+**Zope/universe** makes heavily use of [zope.testrunner](https://pypi.org/project/zope.testrunner/).
+
+### continuous integration - mostly via travisci
+
+Whenever you push to a branch or make a pull request, [TravisCI](https://travis-ci.org) automatically pulls your changes and runs the project's test suite.
+
+This is configured via a **.travis.yml** file at root level of the repository.
+
+> **_NOTE:_**  For packages, which should be supported on the Windows plattform, [AppVeyor](https://www.appveyor.com/) gets used.
+
+### travisci configuration
+
+The configuration for TravisCI changes on quite a regular basis. There are OS upgrades, new and deprecated Python versions, syntax changes and also new and deprecated features for Travis itself.
+
+Depending on how the tests are run, whether there are checks for styles or coverage, the **.travis.yml** can be quite different for different packages.
+
+You can have a look at the recently updated configuration for [zExceptions](https://github.com/zopefoundation/zExceptions/blob/master/.travis.yml) as a good example with up-to-date best practices.
+
+### deprecated travisci configuration
+
+If you happen to see a **sudo: false/true** option in a **.travis.yml** file, you can safely remove it (cf. https://blog.travis-ci.com/2018-11-19-required-linux-infrastructure-migration).
+
+### travisci trouble shooting
+
+- flaky tests - sometimes tests fail for **no reason** - you can try to dig deeper or just re-run the build by clicking the "rebuild" button on the TravisCI website.
+- bad cache => clear cache - rarely this is necessary; a re-run should do the job most of the time - please find more information at the [TravisCI documentation site](https://docs.travis-ci.com/user/caching/#clearing-caches).
+
+
+---
+twitter_handle: jugmac00
+---
+pub_date: 2019-05-03
