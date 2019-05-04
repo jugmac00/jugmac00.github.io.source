@@ -64,6 +64,20 @@ Unlike most other Python projects, **Zope/universe** does not make use of pytest
 
 **Zope/universe** makes heavily use of [zope.testrunner](https://pypi.org/project/zope.testrunner/).
 
+### supported python versions
+
+Currently, Python 2.7, 3.5, 3.6, 3.7 and 3.8 (dev) are supported for most of the **Zope 4/universe** packages. This reflects the officially supported Python versions.
+
+Some packages also support [PyPy](https://pypy.org/).
+
+Afaik, there are plans to drop support for Python 2.7 with Zope 5.
+
+When adding support for a new Python version, or dropping support for an old one, you have to update several files:
+- .travis.yml
+- tox.ini
+- setup.py
+- CHANGES.rst
+
 ### continuous integration - mostly via travisci
 
 Whenever you push to a branch or make a pull request, [TravisCI](https://travis-ci.org) automatically pulls your changes and runs the project's test suite.
@@ -94,7 +108,8 @@ If you happen to see a **sudo: false/true** option in a **.travis.yml** file, yo
 **2019.05.03**
 -  update **what makes it hard to start contributing to Zope**; also add links
 
-
+**2019.05.04**
+- add section about support Python versions
 ---
 twitter_handle: jugmac00
 ---
