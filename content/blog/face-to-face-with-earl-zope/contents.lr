@@ -16,7 +16,7 @@ This blog post tries to ease beginning and keeping up with development of the op
   - [Buildout](http://www.buildout.org/en/latest/)
   - [TravisCI](https://travis-ci.org/)
   - [GitHub.com](https://github.com/zopefoundation)
-  - [tox](https://tox.readthedocs.io/en/latest/)
+  - [tox](https://tox.readthedocs.io/en/latest/) / [quick introduction](https://opensource.com/article/19/5/python-tox)
   - [zope.testrunner](https://zopetestrunner.readthedocs.io/en/latest/)
   - [Read the Docs](https://readthedocs.org/)
   - ...
@@ -110,6 +110,9 @@ If you happen to see a **sudo: false/true** option in a **.travis.yml** file, yo
 
 **2019.05.04**
 - add section about support Python versions
+
+**2019.05.06**
+- add link to a very concise tox introduction
 ---
 twitter_handle: jugmac00
 ---
