@@ -19,7 +19,7 @@ body:
   - worked on porting recipe.testrunner to Python 3 and had some *fun* with doctests
 - Nilo
   - worked on an issue for RestrictedPython
-  - is about fixing a regression in ZCatalog, where sorting does no longer works
+  - is about fixing a regression in ZCatalog, where sorting does no longer work
 - Jens Hinghaus
   - worked on [tempstorage](https://github.com/zopefoundation/tempstorage/pull/11)
   - found and filed a bug in ZMI when using search
