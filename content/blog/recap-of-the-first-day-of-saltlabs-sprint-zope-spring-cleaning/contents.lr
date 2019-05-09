@@ -31,7 +31,7 @@ body:
   - found [Dieter's comment](https://github.com/zopefoundation/Products.ZCatalog/pull/73#issuecomment-490485033) about why so many Travis builds break with Python 3.8; => clear cache and restart build, did this for lots of broken builds
   - revised the subsection about "Exceptions" of the **Zope developer's guide** and found and filed a [bug](https://github.com/zopefoundation/zExceptions/issues/8) in zExceptions; also experienced some strange behaviour with custom exceptions which inherit from **BaseException** (don't do this at home) with waitress
 
-Also, Jens Vagelpohl and Dieter Maurer contributed a lot by adding valuable insights to some complicated discussions, reviewed a lot of pull requests... Jens also added documentation about how to setup daemoize Zope 4 on a systemd powered Linux box.
+Also, Jens Vagelpohl and Dieter Maurer contributed a lot by adding valuable insights to some complicated discussions, reviewed a lot of pull requests... Jens also added documentation about how to setup daemoize Zope 4 on a systemd powered Linux box and fixed on old bug with [importing ZEXP files](https://github.com/zopefoundation/Zope/pull/599).
 
 ## Some more positive news...
 
