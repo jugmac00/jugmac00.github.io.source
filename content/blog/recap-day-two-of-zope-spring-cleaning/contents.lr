@@ -1,0 +1,42 @@
+title: Recap day two of "Zope spring cleaning"
+---
+body:
+
+Very brief recap, as I want to spend the remaining time with some more documentation updates.
+
+## progress
+
+- Jens Hinhaus
+  - [Fix bug in ZMI search](https://github.com/zopefoundation/Zope/pull/605)
+  - improve tempstorage fix
+- Steffen
+  - finished the documenation for the "Nonsensical path" issue
+  - had some fun with getting **AppVeyor** up and running for **Zope**
+- Daniel
+  - fixed a bug in ZCatalog (sorting did not work); migrated a DTML template to zpt
+- Jeremy
+  - continued his work on testrunner
+- Jens Klein with Martin
+  - released ZODB update
+  - released ZODB migrate
+  - opened a pull request for the ZODB migration story
+- Michael
+  - prepared a blog post for the Zope roadmap
+  - prepared a blog post for the final release of Zope 4
+  - released some more packages
+  - is about preparing the final release of Zope 4!!!
+- Jürgen
+  - filed a [bug about a wrong path](https://github.com/zopefoundation/Zope/issues/602) when generating documentation locally
+  - added a [warning box](https://github.com/zopefoundation/Zope/issues/568) when using **records**
+  - updated **Exceptions and Transactions** in the Zope developer guide
+
+
+Again, Jens Vagelpohl, Dieter, Marius and Jason very actively contributed from remote.
+
+P.S.: I will update this blog post when I sit in the train back home... let's get Zope 4 ready to be released!
+---
+author: Jürgen Gmach
+---
+pub_date: 2019-05-10
+---
+twitter_handle: jugmac00
