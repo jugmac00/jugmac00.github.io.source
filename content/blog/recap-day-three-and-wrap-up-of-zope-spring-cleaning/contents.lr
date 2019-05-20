@@ -35,8 +35,11 @@ As there was no final standup, I try to list what I picked up...
 - Jens Hinghaus
   - got his pull request merged for [fixing the ZMI serarch bug](https://github.com/zopefoundation/Zope/pull/605)
 - Jürgen
-  - ... more work on documentation
+  - update [section about XML-RPC](https://zope.readthedocs.io/en/latest/zdgbook/ObjectPublishing.html#xml-rpc) of the Zope developer's guide, which also was the last section of Chapter 4 - which I started updating a whopping 8 months ago!!
+  - started working on Chapter 5 [Zope Products](https://zope.readthedocs.io/en/latest/zdgbook/Products.html)
   - ....
+
+Again, Jens Vagelpohl, Marius and Dieter and maybe some more guys I possibly missed, supported the sprint massively from remote!
 
 ## more news
 
