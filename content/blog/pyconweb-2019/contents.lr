@@ -1,0 +1,57 @@
+title: Slides and more for the PyConWeb 2019
+---
+author: Jürgen Gmach
+---
+body:
+
+## Saturday, 25 May 2019
+- Building robust APIs
+- Tornado Web Services on AsyncIO
+- Bocadilla, or how I built an open source async web framework
+  - [slides](https://www.dropbox.com/s/7z4kde2kjawoc54/pyconweb-slides.pdf?dl=0)
+- Introduction to GraphQL and Graphene
+   - [source](https://github.com/Speedy1991/graphql_workshop)
+- Hello to the World in 8 Web Frameworks
+  - [slides and video](https://noti.st/aaronbassett/lK9Ah7/hello-to-the-world-in-8-web-frameworks-micro-batteries-included-async)
+  - [@aaronbassett](https://twitter.com/aaronbassett)
+- Life without passwords
+- The dos and don'ts of task queues
+- An introduction to D3.js for data visualization
+- Matrix: Building a decentralized messaging plattform using Python and Twisted
+- "Where are the keys?" Solving day-to-day Problems using Tech
+  - [slides](https://www.slideshare.net/mobile/nithishrw/where-are-the-keys-solving-daytoday-problems-using-tech)
+- Teaching how to start developing web applications with Python
+- Dependency Injection in Python: Lessons Learned from Enterprise Web Development
+- Using Python, Matrix and TensorFlow to analyse the content of messages
+- Documentation in practice
+- Testing network interactions in Python
+  - [slides](https://t.co/Rq5Lf5yFm0)
+  - [example code](https://github.com/Stranger6667/testing-network)
+  - [@Stranger6667](https://twitter.com/Stranger6667)
+- Your Name is Invalid!
+
+## Sunday, 26 May 2019
+- New web platform security features for modern webapps
+  - [slides](https://www.slideshare.net/konarkmodi/pyconweb-2019-auditing-websites-apps-for-privacy-leaks-147658330)
+- TurboGears, 10+ years of redesigning a web framework
+- What do travel, food & health websites have in common? Auditing websites & apps for privacy leaks
+- Web Infrastructure Management made easy with Terraform
+- Testing Python security
+- Introduction to Cython
+- Real world Graphene: lessons learned from building a GraphQL API on top of a large Django project
+- An alternative approach to Plone theming
+  - [slides](https://de.slideshare.net/santonelli/alternative-approach-to-plone-theming-pyconweb-2019)
+  - [@stefanantonelli](https://twitter.com/stefanantonelli)
+- Is Django too complicated?
+- Creating Crazy Robotic Librarians
+- Tech bankruptcy: Looking back on a decade of bad decision making
+- Using AI to Power Your Images
+- Kubernetes Workshop
+- Managing the charge process for fleets of electric vehicles using Python and OCPP
+- Context matters: producing more useful logs with Python
+  - [slides](https://speakerdeck.com/fergalwalsh/context-matters-more-useful-logging-with-python)
+- Augmented and virtual reality on the web
+---
+pub_date: 2019-05-27
+---
+twitter_handle: jugmac00
