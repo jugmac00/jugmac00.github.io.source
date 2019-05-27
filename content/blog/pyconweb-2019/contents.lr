@@ -1,10 +1,18 @@
-title: Slides and more for the PyConWeb 2019
+title:
+
+Came for the talks, stayed for the raffles 
 ---
 author: Jürgen Gmach
 ---
 body:
 
-## Saturday, 25 May 2019
+## summary of pyconweb 2019
+F... awesome!
+
+## talks and workshops
+I tried to collect all slides from Twitter and Telegram - in case I missed some, please drop me a line [@jugmac00](https://twitter.com/jugmac00).
+
+### Saturday, 25 May 2019
 - Building robust APIs
 - Tornado Web Services on AsyncIO
 - Bocadilla, or how I built an open source async web framework
@@ -29,8 +37,9 @@ body:
   - [example code](https://github.com/Stranger6667/testing-network)
   - [@Stranger6667](https://twitter.com/Stranger6667)
 - Your Name is Invalid!
+  - [@eumiro](https://twitter.com/eumiro)
 
-## Sunday, 26 May 2019
+### Sunday, 26 May 2019
 - New web platform security features for modern webapps
   - [slides](https://www.slideshare.net/konarkmodi/pyconweb-2019-auditing-websites-apps-for-privacy-leaks-147658330)
 - TurboGears, 10+ years of redesigning a web framework
@@ -46,11 +55,16 @@ body:
 - Creating Crazy Robotic Librarians
 - Tech bankruptcy: Looking back on a decade of bad decision making
 - Using AI to Power Your Images
+  - [slides](https://www.slideshare.net/dougsillars/ai-powered-images)
 - Kubernetes Workshop
 - Managing the charge process for fleets of electric vehicles using Python and OCPP
 - Context matters: producing more useful logs with Python
   - [slides](https://speakerdeck.com/fergalwalsh/context-matters-more-useful-logging-with-python)
 - Augmented and virtual reality on the web
+  - [slides](https://www.slideshare.net/dougsillars/a-rt-gallery-pyconweb)
+
+## post scriptum
+Thanks for the **Echo Dot**! I have not yet dared to open the pandora's box, but I will!
 ---
 pub_date: 2019-05-27
 ---
