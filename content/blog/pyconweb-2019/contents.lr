@@ -16,7 +16,7 @@ I tried to collect all slides from Twitter and Telegram - in case I missed some,
 - Building robust APIs
 - Tornado Web Services on AsyncIO
 - Bocadilla, or how I built an open source async web framework
-  - [slides](https://www.dropbox.com/s/7z4kde2kjawoc54/pyconweb-slides.pdf?dl=0)
+  - [slides@Dropbox](https://www.dropbox.com/s/7z4kde2kjawoc54/pyconweb-slides.pdf?dl=0) | [slides@Github](https://github.com/florimondmanca/talks/blob/master/2019_05_25-bocadillo_pyconweb2019.pdf)
 - Introduction to GraphQL and Graphene
    - [source](https://github.com/Speedy1991/graphql_workshop)
 - Hello to the World in 8 Web Frameworks
@@ -41,9 +41,10 @@ I tried to collect all slides from Twitter and Telegram - in case I missed some,
 
 ### Sunday, 26 May 2019
 - New web platform security features for modern webapps
-  - [slides](https://www.slideshare.net/konarkmodi/pyconweb-2019-auditing-websites-apps-for-privacy-leaks-147658330)
 - TurboGears, 10+ years of redesigning a web framework
 - What do travel, food & health websites have in common? Auditing websites & apps for privacy leaks
+  - [slides](https://www.slideshare.net/konarkmodi/pyconweb-2019-auditing-websites-apps-for-privacy-leaks-147658330)
+  - [@konarkmodi](https://twitter.com/konarkmodi)
 - Web Infrastructure Management made easy with Terraform
 - Testing Python security
 - Introduction to Cython
@@ -65,6 +66,13 @@ I tried to collect all slides from Twitter and Telegram - in case I missed some,
 
 ## post scriptum
 Thanks for the **Echo Dot**! I have not yet dared to open the pandora's box, but I will!
+
+## updates
+2019-05-28
+- add link to slides for "Auditing websites.."
+- remove wrong link to Sunday's keynote
+- add another link to slides for the "Bocadillo talk"
+
 ---
 pub_date: 2019-05-27
 ---
