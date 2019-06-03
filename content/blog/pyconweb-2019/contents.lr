@@ -47,6 +47,8 @@ I tried to collect all slides from Twitter and Telegram - in case I missed some,
   - [@konarkmodi](https://twitter.com/konarkmodi)
 - Web Infrastructure Management made easy with Terraform
 - Testing Python security
+  - [slides](https://speakerdeck.com/jmortega/testing-python-security-pyconweb)
+  - [@jmortegac](https://twitter.com/jmortegac)
 - Introduction to Cython
 - Real world Graphene: lessons learned from building a GraphQL API on top of a large Django project
 - An alternative approach to Plone theming
@@ -68,6 +70,8 @@ I tried to collect all slides from Twitter and Telegram - in case I missed some,
 Thanks for the **Echo Dot**! I have not yet dared to open the pandora's box, but I will!
 
 ## updates
+2019-06-03
+- add link to slides for "Testing Python security"
 2019-05-28
 - add link to slides for "Auditing websites.."
 - remove wrong link to Sunday's keynote
