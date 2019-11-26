@@ -40,7 +40,7 @@ location ~ /apple-touch-icon(|-\d+x\d+)(|-precomposed).png {
 ```
 
 where...
-- the *location* directvie configures what should happen, depending on the request [URI]( https://en.wikipedia.org/wiki/Uniform_Resource_Identifier )
+- the *location* directive configures what should happen, depending on the request [URI]( https://en.wikipedia.org/wiki/Uniform_Resource_Identifier )
 - *~* means regex is following
 
 - *apple-touch-icon(|-\d+x\d+)(|-precomposed).png* should match any and more of the following:
