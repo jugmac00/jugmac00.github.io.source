@@ -282,6 +282,12 @@ Yeah, I know, that is what it is supposed to do, but holy sh... it's real!
 
 ![Pull-Request-Mania-at-GitHub](github.png)
 
+Poor co-maintainers, who need to review all those pull requests!
+
+One already asked,
+whether it is possible to directly push to master...
+[yes, it is](https://github.com/asottile/all-repos#all_repospushmerge_to_master)!
+
 ### after one hour in my inbox
 
 ![email-flood](inbox.png)
@@ -304,6 +310,11 @@ and it especially helps maintaining **open source** projects on a large scale.
 - [concise version of this blog post](https://github.com/jugmac00/til/blob/master/zope/how-to-update-all-zopefoundation-repositories-at-once.md)
 - [all-repos](https://pypi.org/project/all-repos/) on PyPI
 - [Anthony on Twitter](https://twitter.com/codewithanthony)
+
+## updates
+
+2020-10-28
+- add info on how to [directly push to master](https://github.com/asottile/all-repos#all_repospushmerge_to_master)
 
 ---
 pub_date: 2020-10-28
