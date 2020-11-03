@@ -94,7 +94,7 @@ A token basically allows programs to interact with GitHub on your behalf.
 
 ### configuration
 
-The configuration is done with a JSON file.
+The configuration is done with a JSON file, which is named `all-repos.json` by default.
 
 Mine looks like so
 ```
@@ -170,9 +170,6 @@ which may not be present on macOS.
 While `all-repos-grep` and other CLI commands like `all-repos-find-files` are read-only,
 the real fun starts with so-called `autofixers`.
 
-`autofixers` are a tad underdocumented,
-so - as I already mentioned - I had a bit of hard to time to grasp the concept at first.
-
 Basically, an `autofixer` applies changes to all repositories which match a certain pattern.
 
 While there are pre-built `autofixers` like `all-repos-sed`,
@@ -183,9 +180,6 @@ Ok, so we can bulk-modify repositories, but what then?
 How do I commit the changes?
 How do I create a branch?
 A pull request?
-
-Here, the documentation is even more sparse,
-as there is only the API documentation for the **push modules**. Hm...
 
 Ok, first things first, let's try to update all repositories...
 
@@ -315,6 +309,10 @@ and it especially helps maintaining **open source** projects on a large scale.
 
 2020-10-28
 - add info on how to [directly push to master](https://github.com/asottile/all-repos#all_repospushmerge_to_master)
+
+2020-03-11
+- remove criticism of the documentation, [constructive attempts to fix it is better](https://github.com/asottile/all-repos/issues/140), right?
+- add default name of configuration file
 
 ---
 pub_date: 2020-10-28
