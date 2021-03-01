@@ -65,7 +65,7 @@ and no package depends of the good will of a single maintainer,
 who always start euphoric,
 and at one point in time neglect the project because of real life or switching company or language.
 
-Ok, so we use `tox` in most of the roundabout 300 active packages.
+Ok, so we use **tox** in most of the roundabout 300 active packages.
 
 How would I be able to run **tox alpha** on all of them?
 
