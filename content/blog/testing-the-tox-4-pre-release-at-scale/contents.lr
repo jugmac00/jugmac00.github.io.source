@@ -204,6 +204,7 @@ and for always being friendly and helpful!
 ## found and reported issues
 
 - [`package init file missing` warning when running tox4](https://github.com/zopefoundation/zope.testrunner/issues/112)
+- [tox4: fails when requirements file contains a line a la `-e .[test] -c constraints.xt`](https://github.com/tox-dev/tox/issues/1929)
 
 I will update this list with all the reported issues, be it at the tox or the project's issue tracker.
 
