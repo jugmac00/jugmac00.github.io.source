@@ -196,7 +196,16 @@ which I will have a look at myself at first,
 and when it turns out this is not a problem in the package,
 I will report an issue at the issue tracker of tox.
 
-I will update this blog post with the error reports.
+## thanks
+
+Thanks to Anthony and Bernát for all your work in the Python open source eco system,
+and for always being friendly and helpful!
+
+## found and reported issues
+
+- [`package init file missing` warning when running tox4](https://github.com/zopefoundation/zope.testrunner/issues/112)
+
+I will update this list with all the reported issues, be it at the tox or the project's issue tracker.
 
 ---
 pub_date: 2021-03-01
