@@ -212,6 +212,7 @@ and for always being friendly and helpful!
 - [tox will break with the release of tox4 #18](https://github.com/plone/Products.ExtendedPathIndex/issues/18)
 - [tox run broken #80](https://github.com/plone/diazo/issues/80)
 - [tox broken: "ImportError: No module name `zope.testrunner` #74](https://github.com/plone/plone.app.testing/issues/74)
+- [tox configuration is Python 2.7 only #6](https://github.com/plone/plone.gallery/issues/6)
 
 I will update this list with all the reported issues, be it at the tox or the project's issue tracker.
 
