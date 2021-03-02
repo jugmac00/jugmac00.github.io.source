@@ -216,6 +216,7 @@ and for always being friendly and helpful!
 - [tox4: ValueError: No closing quotation (via shlex) #1944](https://github.com/tox-dev/tox/issues/1944)
 - [tox4: editable installs do not work (deps) #1945](https://github.com/tox-dev/tox/issues/1945)
 - [tox will break when tox4 will be released #48](https://github.com/zopefoundation/Products.PythonScripts/issues/48)
+- [tox4: a possible quoting issue #1948](https://github.com/tox-dev/tox/issues/1948)
 
 I will update this list with all the reported issues, be it at the tox or the project's issue tracker.
 
