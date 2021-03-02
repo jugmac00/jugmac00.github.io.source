@@ -213,6 +213,7 @@ and for always being friendly and helpful!
 - [tox run broken #80](https://github.com/plone/diazo/issues/80)
 - [tox broken: "ImportError: No module name `zope.testrunner` #74](https://github.com/plone/plone.app.testing/issues/74)
 - [tox configuration is Python 2.7 only #6](https://github.com/plone/plone.gallery/issues/6)
+- [tox4: ValueError: No closing quotation (via shlex) #1944](https://github.com/tox-dev/tox/issues/1944)
 
 I will update this list with all the reported issues, be it at the tox or the project's issue tracker.
 
