@@ -205,8 +205,9 @@ and for always being friendly and helpful!
 
 - [`package init file missing` warning when running tox4](https://github.com/zopefoundation/zope.testrunner/issues/112)
 - [tox4: fails when requirements file contains a line a la `-e .[test] -c constraints.xt`](https://github.com/tox-dev/tox/issues/1929)
-- [tox is broken](https://github.com/plone/plone.memoize/issues/24)
+- [tox is broken #24](https://github.com/plone/plone.memoize/issues/24)
 - [tox4: tox fails to parse tox.ini when a testenv contains `deps = .[test]`](https://github.com/tox-dev/tox/issues/1933)
+- [tox broken #114](https://github.com/plone/plone.app.standardtiles/issues/114)
 
 I will update this list with all the reported issues, be it at the tox or the project's issue tracker.
 
