@@ -76,7 +76,7 @@ by [Anthony Sottile](https://twitter.com/codewithanthony) previously in
 [How to create hundreds of pull requests with a single command?](https://jugmac00.github.io/blog/how-to-create-hundreds-of-pull-requests-with-a-single-command/),
 but this time it is different.
 
-If you did not encounter **all-repos** yet...
+If you have not encounter **all-repos** yet...
 
 In short, with **all-repos** you can clone all of your and your organization's repositories,
 find files,
@@ -98,13 +98,13 @@ I directly dug into the source code to find some inspiration on how to write my 
 **all-repos** offers a couple of command line entry points
 and also a couple of [example usages](https://github.com/asottile/all-repos/tree/master/all_repos/autofix),
 and after looking around a bit,
-I chose the script for [all-repos-list-repos](https://github.com/asottile/all-repos/blob/master/all_repos/list_repos.py),
+I chose the script for [all-repos-list-repos](https://github.com/asottile/all-repos/blob/master/all_repos/list_repos.py) as a template,
 which basically does everything I wanted,
 except executing **tox**.
 
 So, **all-repos** exposes a `load_config` method,
 with which I get hold on all repositories,
-and instead of just printing their paths,
+and instead of just printing their paths as in `all-repos-list-repos`,
 I need to check whether they contain a **tox.ini** file,
 and if so, run **tox4 alpha**.
 
@@ -114,43 +114,45 @@ all is ok, otherwise I need to collect the repo name for later inspection.
 
 At the end I just print the result.
 
+### first version of the script
+
 ```python
-config = load_config(args.config_filename)
-results = {
-    "notox": [],
-    "successful": [],
-    "problems": [],
-}
+def main(argv: Optional[Sequence[str]] = None) -> int:
+    parser = argparse.ArgumentParser(
+        description='Run tox4 on all cloned repositories.',
+        usage='python main.py -C configfile',
+    )
+    cli.add_common_args(parser)
+    cli.add_output_paths_arg(parser)
+    args = parser.parse_args(argv)
 
-number_of_repos = len(config.get_cloned_repos())
+    config = load_config(args.config_filename)
+    results = {"notox": [],
+               "successful": [],
+               "problems": [],
+    }
+    for i, repo in enumerate(config.get_cloned_repos()):
+        path_repo = os.path.join(config.output_dir, repo)
+        path_tox = os.path.join(path_repo, "tox.ini")
+        if os.path.exists(path_tox):
+            print(f"about to run tox for {repo}, {i+1} of {len(config.get_cloned_repos())}")
+            run = subprocess.run(["tox4", "-e py39", "-c", path_tox], capture_output="True")
 
-for i, repo in enumerate(list(config.get_cloned_repos())):
-    path_repo = os.path.join(config.output_dir, repo)
-    path_tox = os.path.join(path_repo, "tox.ini")
-    if os.path.exists(path_tox):
-        print(f"about to run tox for {repo}, {i+1} of {number_of_repos}")
-        run = subprocess.run(["tox4", "-e py38", "-c", path_tox], stdout=subprocess.DEVNULL)
-        if run.returncode == 0:
-            print(f"tox4 run successful for {repo}")
-            results["successful"].append(repo)
+            if run.returncode == 0:
+                print(f"tox4 run successful for {repo}")
+                results["successful"].append(repo)
+            else:
+                print(f"tox4 run failed for {repo}")
+                results["problems"].append(repo)
+
         else:
-            print(f"tox4 run failed for {repo}")
-            results["problems"].append(repo)
-
-    else:
-        results["notox"].append(repo)
-        print(f"{repo} does not contain a tox configuration. Boo!")
-
-print(f'notox: {len(results["notox"])}')
-print(f'{results["notox"]}')
-print(f'successful: {len(results["successful"])}')
-print(f'{results["successful"]}')
-print(f'problems: {len(results["problems"])}')
-print(f'{results["problems"]}')
+            results["notox"].append(repo)
+            print(f"{repo} does not contain a tox configuration. Boo!")
+    print(results)
+    return 0
 ```
 
-(I will create a repository for the complete script once I cleaned it up,
-and documented it properly.)
+The latest version of the script is [available on GitHub](https://github.com/jugmac00/my-all-repos).
 
 The end...?
 
@@ -172,11 +174,13 @@ But why?
 I had another look at my script and still had no clue.
 
 I asked at the [tox discord channel](https://discord.gg/tox),
-and both Anthony and Bernát gave me some valuable tips,
+and both Anthony and Bernát gave me some valuable tips on how to improve my code.
+
 I ran my script again,
 and after quite some time again, it made boom again.
 
-Finally, I pinpointed the problem to a single repository,
+Finally, with the help of a system monitoring tool,
+I pinpointed the problem to a single repository,
 which for some yet to be investigated reasons,
 started an endless **setuptools** update circle and ate memory like crazy.
 
@@ -188,7 +192,7 @@ and showed me the result.
 
 Bernát's reaction: "a 22% success here, not that great news :smile: but on plus side seems if we fix zope we should be in a decent place"
 
-That was my intention! :-)
+This was exactly my intention! :-)
 
 P.S.: By the way, there are certainly not 208 different errors / bugs,
 it is more like there are roundabout four different error cases,
@@ -220,8 +224,6 @@ and for always being friendly and helpful!
 - [tox is broken: couldn't open ...buildout.cfg #52](https://github.com/zopefoundation/zopetoolkit/issues/52)
 - [no support for Python 3.8 - module `cgi` has no attribute `escape` #8](https://github.com/zopefoundation/keas.kmi/issues/8)
 - [ResourceWarning: Enable tracemalloc to get the object allocation traceback](https://github.com/zopefoundation/bobo/issues/18)
-
-I will update this list with all the reported issues, be it at the tox or the project's issue tracker.
 
 ---
 pub_date: 2021-03-01
