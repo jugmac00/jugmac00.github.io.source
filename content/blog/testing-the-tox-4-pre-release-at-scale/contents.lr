@@ -88,7 +88,7 @@ But afaik **all-repos** does not offer an easy way to run a custom command on al
 
 Also, unlike e.g. **pytest**, it also does not offer any plugin mechanism, but ...
 
-It is super easy to use **all-test** as a library.
+It is super easy to use **all-repos** as a library.
 
 ## use the source
 
