@@ -4,7 +4,7 @@ author: Jürgen Gmach
 ---
 body:
 
-How do you make type annotations available for the users of your library?
+How do you make type annotations available to the users of your library?
 
 Well, you just type annotate your library, right?
 
